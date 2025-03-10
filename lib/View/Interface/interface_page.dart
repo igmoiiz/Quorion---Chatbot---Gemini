@@ -106,20 +106,23 @@ class _InterfacePageState extends State<InterfacePage> {
                     controller: inputControllers.messageController,
                     style: const TextStyle(color: Colors.white),
                     cursorColor: Colors.white, // Set the cursor color to white
+                    
                     decoration: InputDecoration(
+                      filled: true,
+                      fillColor: Colors.grey.shade900,
                       labelText: "Hey there! How can I help you?",
                       labelStyle: TextStyle(color: Colors.grey[400]),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(18),
-                        borderSide: BorderSide(color: Colors.grey[600]!),
+                        borderSide: BorderSide(color: Colors.grey[900]!),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(18),
-                        borderSide: const BorderSide(color: Colors.white),
+                        borderSide: BorderSide(color: Colors.grey.shade800),
                       ),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(18),
-                        borderSide: BorderSide(color: Colors.grey[600]!),
+                        borderSide: BorderSide(color: Colors.black!),
                       ),
                     ),
                   ),
